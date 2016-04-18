@@ -1,0 +1,1 @@
+docker run --name app1 -d -p 80:80 --link db:db --link consul:consul pjmolina/eventapp

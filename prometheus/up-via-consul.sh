@@ -1,0 +1,1 @@
+docker run -d -p 9090:9090 -v //c/Users/PedroJ/docker/prom-consul3:/etc/prometheus --name=prometheus --link consul:consul prom/prometheus

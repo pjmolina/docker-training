@@ -1,0 +1,1 @@
+docker run -d -p 9090:9090 -v //c/Users/PedroJ/docker/prom:/etc/prometheus --name=prometheus prom/prometheus

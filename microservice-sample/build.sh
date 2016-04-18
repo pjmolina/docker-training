@@ -1,0 +1,1 @@
+docker build -t pjmolina/eventapp -f src/Dockerfile src

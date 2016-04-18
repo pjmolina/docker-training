@@ -1,0 +1,1 @@
+docker run --name db -d -P mongo:3.2

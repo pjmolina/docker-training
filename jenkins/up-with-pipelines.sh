@@ -1,0 +1,1 @@
+docker run --rm -p 2222:2222 -p 8080:8080 -p 8081:8081 -p 9418:9418 -ti -v '//c/Users/pedroj/jenkins:/var/jenkins_home' --name jenkins jenkinsci/workflow-demo
