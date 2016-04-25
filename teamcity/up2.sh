@@ -1,1 +1,0 @@
-docker run -dt --name teamcity -p 8111:8111 sjoerdmulder/teamcity

@@ -1,1 +1,0 @@
-docker run --name nodejs-agent -e TEAMCITY_SERVER=http://teamcity:8111 -dt -p 9090:9090 ariya/centos7-teamcity-agent-nodejs
