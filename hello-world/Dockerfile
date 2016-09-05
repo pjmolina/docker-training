@@ -1,4 +1,4 @@
-FROM node:argon
+FROM node:latest
 
 # Create app directory
 RUN mkdir -p /usr/src/app
@@ -11,5 +11,7 @@ RUN npm install
 # Bundle app source
 COPY . /usr/src/app
 
-EXPOSE 8080
+ENV PORT 8080
+EXPOSE ${PORT}
+
 CMD [ "npm", "start" ]
