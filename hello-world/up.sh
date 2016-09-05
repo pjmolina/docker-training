@@ -1,1 +1,1 @@
-docker run --name web0 -d -p 8090:8080 web0
+docker run --name web0 -d -p 8090:8080 nodeweb0
