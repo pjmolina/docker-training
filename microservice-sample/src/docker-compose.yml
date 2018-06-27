@@ -1,5 +1,5 @@
 db:
-  image: mongo:3.2
+  image: mongo:latest
   ports:
   - "27017"  
 
@@ -22,4 +22,4 @@ lb:
     APP_PATH: "/"
     SRC_APP_PATH: "/src"
   ports:
-  - "80:80"
+  - "8080:80"

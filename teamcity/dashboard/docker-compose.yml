@@ -1,0 +1,8 @@
+version: '2'
+services:
+  teamcity:
+    image: sjoerdmulder/teamcity
+    ports:
+      - "8111:8111"
+    volumes:
+      - "/var/lib/teamcity:/c/docker/teamcity-server"

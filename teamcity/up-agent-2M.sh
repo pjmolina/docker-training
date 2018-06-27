@@ -1,0 +1,1 @@
+docker run -d --name=tc-a03 -m 2Gb --memory-swap 2Gb --link teamcity:teamcity --privileged -e TEAMCITY_SERVER=http://teamcity:8111 sjoerdmulder/teamcity-agent:latest

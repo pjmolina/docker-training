@@ -1,0 +1,1 @@
+docker build -t pjmolina/tca_n7 .	
