@@ -8,7 +8,7 @@ const PORT = process.env.PORT || 8080;
 // App
 const app = express();
 app.get('/', function (req, res) {
-  res.send('Hola mundo  ' + Date.now() + ' \n');
+  res.send('Hola mundo  ' + new Date().toISOString() + ' \n');
 });
 
 app.listen(PORT);
