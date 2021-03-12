@@ -1,7 +1,7 @@
 db:
-  image: mongo:latest
-  ports:
-  - "27017"  
+  image: mongo:3.4
+  # ports:
+  # - "27017"  
 
 app:
   build: .

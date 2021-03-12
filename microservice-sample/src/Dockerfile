@@ -24,5 +24,6 @@ ENV PORT=80
 #ENV DB_URI=mongodb://<host>:<port>/<dbName>
 
 EXPOSE 80
+LABEL  VERSION=2
 
 CMD [ "npm", "start" ]

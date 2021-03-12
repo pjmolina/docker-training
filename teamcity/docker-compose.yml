@@ -1,16 +1,18 @@
 version: '2'
 services:
+
   teamcity:
     image: sjoerdmulder/teamcity
     ports:
       - "8111:8111"
-    volumes:
-      - "/var/lib/teamcity:/c/docker/teamcity-server"
-  nodejs-agent:
-    image: sjoerdmulder/teamcity-agent-docker
-    ports:
-      - "9090:9090"
-    environment:
-      TEAMCITY_SERVER: http://teamcity:8111
-    links:
-      - teamcity
+    # volumes:
+    #  - "/var/lib/teamcity:/c/docker/teamcity-server"
+
+  # nodejs-agent:
+  #   image: sjoerdmulder/teamcity-agent-docker
+  #   ports:
+  #     - "9090:9090"
+  #   environment:
+  #     TEAMCITY_SERVER: http://teamcity:8111
+  #   links:
+  #     - teamcity
