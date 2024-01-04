@@ -1,0 +1,27 @@
+docker network create influxdb
+
+docker run -d --name=influxdb --net=influxdb influxdb
+
+docker run -d --name=telegraf --net=influxdb \
+      -v $PWD/telegraf.conf:/etc/telegraf/telegraf.conf:ro \
+      telegraf
+
+docker logs -f telegraf
+
+docker network rm influxdb
+ 
+
+-----------------
+
+
+
+docker run -d --name influxdb -p 8086:8086 influxdb
+
+
+docker run -d --name=telegraf --link influxdb:influxdb -v $PWD/telegraf.conf:/etc/telegraf/telegraf.conf:ro telegraf
+
+docker run -d --name=telegraf --link influxdb:influxdb --mount type=bind,src=${PWD}/telegraf.conf,dst=/etc/telegraf/telegraf.conf telegraf
+
+
+
+docker logs -f telegraf

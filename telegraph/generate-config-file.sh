@@ -1,0 +1,1 @@
+docker run --rm telegraf telegraf config > telegraf.conf
